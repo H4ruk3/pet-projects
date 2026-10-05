@@ -1,0 +1,176 @@
+<mxfile host="Electron" modified="2024-06-28T19:39:57.004Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="xBc62NfenQFpeuuJrFAt" version="22.1.2" type="device">
+  <diagram name="Page-1" id="SbKqlVZfA65Lfoil8_Yg">
+    <mxGraphModel dx="2058" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UPBryltL_-dtQPMpennd-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-22" target="UPBryltL_-dtQPMpennd-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-2" value="начало" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="60" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-4" target="UPBryltL_-dtQPMpennd-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-4" value="действие пользователя" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="715" y="220" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-8" target="UPBryltL_-dtQPMpennd-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-6" value="да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UPBryltL_-dtQPMpennd-5">
+          <mxGeometry x="-0.3444" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-8" target="UPBryltL_-dtQPMpennd-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-8" value="нажата кнопка войти" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="300" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-12" target="UPBryltL_-dtQPMpennd-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="315" />
+              <mxPoint x="1100" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-10" value="да&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UPBryltL_-dtQPMpennd-9">
+          <mxGeometry x="-0.4051" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-12" target="UPBryltL_-dtQPMpennd-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-12" value="нужные поля заполнены&lt;br&gt;и пользователь уже зарегистрирован" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="897.5" y="262.5" width="205" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-14" target="UPBryltL_-dtQPMpennd-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-14" value="вход в систему" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="285" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-18" target="UPBryltL_-dtQPMpennd-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-16" value="да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UPBryltL_-dtQPMpennd-15">
+          <mxGeometry x="-0.3988" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-18" target="UPBryltL_-dtQPMpennd-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-18" value="кнопка регистрации" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="380" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-20" target="UPBryltL_-dtQPMpennd-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-20" value="вход на страницу регистрации" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-2" target="UPBryltL_-dtQPMpennd-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="120" as="sourcePoint" />
+            <mxPoint x="770" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-22" value="вход на страницу авторизации и аутентификации" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-24" target="UPBryltL_-dtQPMpennd-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-24" value="действие пользователя" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="530" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-28" target="UPBryltL_-dtQPMpennd-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-26" value="да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UPBryltL_-dtQPMpennd-25">
+          <mxGeometry x="-0.3819" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-28" target="UPBryltL_-dtQPMpennd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-28" value="нажата кнопка зарегистрироваться" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="615" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-32" target="UPBryltL_-dtQPMpennd-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-30" value="да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UPBryltL_-dtQPMpennd-29">
+          <mxGeometry x="-0.2113" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-32" target="UPBryltL_-dtQPMpennd-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-32" value="все нужные поля &lt;br&gt;заполнены, пароли совпадают, такого логина еще нет в базе" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="570" width="165" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-34" target="UPBryltL_-dtQPMpennd-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-34" value="добавление пользователя в базу" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-36" target="UPBryltL_-dtQPMpennd-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="740" />
+              <mxPoint x="560" y="740" />
+              <mxPoint x="560" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-36" value="нажата кнопка &quot;уже есть акканут&quot;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="700" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-38" target="UPBryltL_-dtQPMpennd-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-38" value="кнопка показать пароль" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="450" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UPBryltL_-dtQPMpennd-40" target="UPBryltL_-dtQPMpennd-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="570" />
+              <mxPoint x="640" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-40" value="показ/сокрытие пароля" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UPBryltL_-dtQPMpennd-41" value="конец&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="430" width="60" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

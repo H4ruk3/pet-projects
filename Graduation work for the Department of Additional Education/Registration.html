@@ -1,0 +1,55 @@
+<!-- registration.html -->
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/button.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <header>
+        <nav class="logo">
+            <img width="50px" src="assets/logo_icon.svg" alt="Dropdown Button">
+            <span>JI.RU</span>
+        </nav>
+
+    </header>
+    <main class="container">
+        <form class="form_container" action="php/registration.php" method="post">
+            <input tabindex="1" style="margin-top: 135px;" type="email" name="login" id="" required placeholder="LOGIN...">
+            <input tabindex="2" type="" name="name" id="" required placeholder="Username...">
+            <input tabindex="3" type="password" name="password" id="password" required placeholder="PASSWORD...">
+            <input tabindex="4" style="margin-bottom: 10px;" type="password" name="rePassword" id="rePassword" required placeholder="repeat password...">
+            <div class="input_links">
+                <a tabindex="5" style="user-select: none;  text-decoration: underline; cursor: pointer;" tabindex="3" id="toggle-password">Show Password</a>
+                <button tabindex="7" type = "submit" name = "register" id="register" class="button_login">Register</button>
+                <a tabindex="6" href="index.php">Already have an account</a>
+            </div>
+        </form>
+    </main>
+</body>
+<script>
+    document.getElementById('toggle-password').addEventListener('click', function () {
+            let passwordInput = document.getElementById('password');
+            let rePasswordInput = document.getElementById('rePassword');
+            let togglePasswordLink = document.getElementById('toggle-password');
+            if (passwordInput.type === 'password' && rePasswordInput.type === 'password') {
+                passwordInput.type = 'text';
+                rePasswordInput.type = 'text';
+                togglePasswordLink.textContent = 'Hide Password';
+            } else {
+                passwordInput.type = 'password';
+                rePasswordInput.type = 'password';
+                togglePasswordLink.textContent = 'Show Password';
+            }
+        });
+</script>
+</html>

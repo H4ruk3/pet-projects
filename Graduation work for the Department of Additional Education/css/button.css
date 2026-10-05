@@ -1,0 +1,41 @@
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(184, 217, 255);
+    border-radius: 50px;
+    min-width: 150px;
+    min-height: 40px;
+    font-size: 24px;
+    box-shadow: 0 1px 9px 3px rgba(2, 104, 104, 0.4);
+    background: rgb(184, 217, 255);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    outline: none;
+}
+button:hover {
+    outline: none;
+    background-color: rgb(131, 186, 248);
+    transition: background-color 0.3s ease;
+
+}
+
+button:focus{
+    background-color: rgb(131, 186, 248);
+    transition: background-color 0.3s ease;
+}
+
+button:focus-visible{
+    background-color: rgb(131, 186, 248);
+    transition: background-color 0.3s ease;
+}

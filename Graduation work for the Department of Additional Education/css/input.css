@@ -1,0 +1,109 @@
+input {
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(217, 217, 217, 1);
+    height: 45px;
+    min-height: 45px;
+    width: 70%;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+}
+
+textarea{
+    margin-top: 20px;
+    resize: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(217, 217, 217, 1);
+    height: 150px;
+    width: 70%;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+textarea::placeholder{
+    color: #999;
+    text-transform: uppercase;
+}
+
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+
+input::placeholder {
+    color: #999;
+    text-transform: uppercase;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input_links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: rgba(140, 189, 245);
+}
+
+.input_links a:visited{
+    color: black;
+
+}
+.input_links a{
+    color: black;
+
+}
+.input_links a:hover{
+    color: grey;
+}
+
+.button_login {
+    order: 1;
+    flex: 0 0 151px;
+}
+
+@media (max-width: 899px) {
+    .input_links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button_login {
+        order: 0;
+        border-radius: 50px;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        border: none;
+        flex: none;
+    }
+
+}
