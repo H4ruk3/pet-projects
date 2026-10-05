@@ -1,0 +1,494 @@
+.navbar-nav>li>a {
+        padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #e1b10a;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: #e1b10a;    
+}
+
+.opt {
+    margin: 25px;
+}
+
+.opt ul {
+    list-style-type: none;
+}
+
+.head {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.style_form {
+    width: 500px;
+    margin: 20px;
+}
+
+.style_form input[type=submit] {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #666;
+}
+
+.style_form input[type=button],
+.style_form button {
+    padding: 0px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #666;
+    margin-left: 20px;
+}
+
+.style_form input[type=text],
+.style_form input[type=password],
+.style_form input[type=number] {
+    width: 250px;
+}
+
+.style_form input[type=radio] {
+    margin-right: 0px;
+}
+
+.style_form select {
+
+    width: 200px;
+    margin-right: 0px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.content {
+
+    margin: 20px;
+}
+
+#define {
+
+    display: none;
+}
+
+.inpTime {
+
+    margin-right: 10px;
+    width: 25px;
+}
+
+.input, .submit {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.time select {
+
+    width: 80px;
+}
+
+.time label {
+
+    display: block;
+}
+
+.number input {
+
+    width: 60px;
+}
+
+.cake_form {
+
+}
+
+.site-header {
+
+    background: #ffc90d;
+}
+
+.head-link {
+
+    color: #3f47cc !important;
+    font-weight: bold;
+}
+
+.body-link {
+
+    color: #ffc90d !important;
+    font-weight: bold;
+}
+
+.site-back {
+
+    color: #003f72;
+}
+
+.site-body a {
+
+    font-weight: bold;
+    #color: #3f47cc !important;
+}
+
+.site-back a:hover {
+
+    color: #3f47cc !important;
+}
+
+table {
+
+    color: #333;
+}
+
+table tr {
+
+    background: #fff;
+}
+
+.table a {
+
+    color: #003f72 !important;
+}
+
+.site-logo {
+    background-image: url('../img/logo-min.png');
+    width: 40px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 3px;
+}
+
+
+/* nutritionprogram */
+body
+{
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    color: #003f72;
+    table-layout: fixed;
+}
+
+table caption {
+    text-align: center;
+    font-weight: bold;
+    color: #003f72;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #003f72;
+}
+
+.button-contains {
+    border: none;
+}
+
+.input-edit-contains {
+    padding: 0;
+}
+
+.input-edit {
+    border: none;
+    padding: 0 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.table-header {
+    font-weight: bold;
+    background-color: #dae3ea;
+}
+
+.nutrition-part {
+    width: 500px;
+}
+
+.nutrition-caption-name {
+    /*width: 35%;*/
+}
+
+.nutrition-caption-weight {
+    /*width: 15%;*/
+}
+
+.nutrition-caption-pfc {
+    /*width: 10%;*/
+}
+
+.nutrition-caption-calories {
+    /*width: 10%;*/
+}
+
+.nutrition-caption-delete {
+    width: 24px;
+}
+
+#nutrition-content {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+}
+
+#meals {
+    flex: 0 0 500px;
+    padding-bottom: 10px;
+}
+
+#products {
+    flex: 0 0 auto;
+}
+
+#mytest {
+    background: red;
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+}
+
+#mytest.affix {
+    top: 0;
+}
+
+#grocery-list-combine {
+    width: 400px;
+    height: 500px;
+}
+
+#grocery-list-combine.affix {
+    top: 0;
+}
+
+#grocery-list-header {
+    width: 100%;
+    overflow-y: scroll;
+    display: block;
+}
+
+#grocery-list-header th {
+    border-bottom: hidden;
+}
+
+#grocery-list-caption {
+    text-align: center;
+    font-weight: bold;
+    color: #003f72;
+    font-size: 13pt;
+    margin: 5px 0;
+}
+
+#grocery-list {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    display: block;
+}
+
+.grocery-list-pfc {
+    width: 50px;
+}
+
+.grocery-list-name {
+    width: 182px;
+}
+
+#grocery-list.affix {
+    top: 0;
+}
+
+.empty-sell {
+    width: 16px;
+    border: none;
+}
+
+table>tbody>.selected:hover {
+    background: #dae5ff;
+}
+
+/* хлебные крошки */
+#breadcrumb {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0px;
+}
+#breadcrumb .icon {
+  font-size: 14px;
+}
+#breadcrumb li {
+  float: left;
+}
+#breadcrumb li a {
+  color: #fff;
+  display: block;
+  background: #337ab7;
+  text-decoration: none;
+  position: relative;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px 0 5px;
+  text-align: center;
+  margin-right: 23px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+}
+#breadcrumb li:first-child a {
+  padding-left: 15px;
+  -moz-border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 0 0 4px;
+}
+#breadcrumb li:first-child a:before {
+  border: none;
+}
+#breadcrumb li:last-child a {
+  padding-right: 15px;
+  -moz-border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 4px 4px 0;
+}
+#breadcrumb li:last-child a:after {
+  border: none;
+}
+#breadcrumb li a:before, #breadcrumb li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border: 0 solid #337ab7;
+  border-width: 17px 10px;
+  width: 0;
+  height: 0;
+}
+#breadcrumb li a:before {
+  left: -20px;
+  border-left-color: transparent;
+}
+#breadcrumb li a:after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #337ab7;
+}
+#breadcrumb li a:hover {
+  background-color: #286090;
+  color: #333 !important;
+}
+#breadcrumb li a:hover:before {
+  border-color: #286090;
+  border-left-color: transparent;
+}
+#breadcrumb li a:hover:after {
+  border-left-color: #286090;
+}
+#breadcrumb li a:active {
+  background-color: #a22587;
+}
+#breadcrumb li a:active:before {
+  border-color: #a22587;
+  border-left-color: transparent;
+}
+#breadcrumb li a:active:after {
+  border-left-color: #a22587;
+}
+#breadcrumb li.current a {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+
+/*Аккордеон*/
+.collapse {
+    margin: 15px;
+}
+
+.panel-default>.panel-heading.pantitle {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.item {
+   /*     display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;*/
+    align-items: center;
+    border-bottom: 1px dotted #b76729;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.item>.wraper {
+        width: 100%;
+    display: flex;
+}
+.item>.wraper:hover>.number {
+    background-color: #3f47cc;
+}
+.number {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 24px;
+    -ms-flex: 0 0 24px;
+    flex: 0 0 24px;
+    max-width: 24px;
+    height: 24px;
+    background-color: #337ab7;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.itemtitle {
+    padding-top: 5px;
+    padding-left: 7px;
+    line-height: 1!important;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.excersicedata {
+    padding-top: 5px;
+}
+
+.table a+.disabled {
+        color: grey !important;
+    cursor: default;
+  }
+  .table a {
+    text-decoration: none
+  }
+
+  .ps>.ps__scrollbar-y-rail>.ps__scrollbar-y {
+    background-color: rgb(51, 122, 183)!important;
+  }
+
+  .dayheader {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #204d74;
+    padding: 1px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}.icon {
+    width:20px;
+}

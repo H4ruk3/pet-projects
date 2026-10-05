@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+        "xdebug": {
+             "url": "http://coachme:8080/",
+        }
+    }
+}

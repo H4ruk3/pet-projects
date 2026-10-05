@@ -1,0 +1,162 @@
+@font-face {
+			font-family: "SegoeUIRegular";
+			src: url("fonts/SegoeUIRegular/SegoeUIRegular.eot");
+			src: url("fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+			url("fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+			url("fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "Bariol";
+			src: url("fonts/Roboto-light.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "SegoeUIBold";
+			src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+			src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+			url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "SegoeUIItalic";
+			src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+			src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+			url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "SegoeUILight";
+			src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+			src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+			url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "SegoeUISemiBold";
+			src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+			src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+			url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+
+.regmain {
+	min-height:100%;
+}
+
+.regform {
+	width: 500px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: -225px;
+    background-color: rgba(50, 64, 101, 1);
+
+}
+
+.tabs {
+	margin: 0;
+}
+
+.tabs div {
+	height:40px;
+	border-right: 1px solid #00a5a9;
+  font-size: 16px;
+  font-family: "Bariol";
+  color: rgb(255, 255, 255);
+  line-height: 40px;
+  text-align: center;
+}
+
+.last {
+	border-right: none !important;
+}
+
+.enactive {
+	background-color: #4f5d80;
+	
+}
+.enactive:hover {
+	background-color: #304275;
+	cursor: pointer;
+	border-bottom: 2px solid #00a5a9;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: "Bariol";
+  color: rgb(255, 255, 255);
+  line-height: 0.4;
+  z-index: 15;
+  text-align: center;
+  padding-top: 20px;
+}
+
+body {
+	background-color: rgb(22,32,59);
+}
+
+.text {
+	height:40px;
+	width:100%;
+	background-color:#4b597c;
+	border: 1px solid #006e89;
+	color: white;
+	margin: 10px 0;
+	padding: 0 5px 0px 35px;
+}
+.mail {
+	    background-image: url(img/mail.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.pass {
+	background-image: url(img/pass.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.button {
+	margin: 5px 0;
+	background-color: #ff4b66;
+	border: 1px solid #ff4b66;
+	width:80%;
+	margin-left: 10%;
+	height:40px;
+	color: #ffffff;
+}
+form {
+	    margin-top: 20px;
+    padding: 20px;
+}
+
+input.icon{
+    background: url(icon.png) no-repeat center left;
+    padding-left:30px;
+}
+
+img {
+	width:100%;
+}
+
+::-webkit-input-placeholder {color:#7482a5;}
+::-moz-placeholder          {color:#7482a5;}/* Firefox 19+ */
+:-moz-placeholder           {color:#7482a5;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#7482a5;}

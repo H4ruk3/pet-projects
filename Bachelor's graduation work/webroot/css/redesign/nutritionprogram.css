@@ -1,0 +1,294 @@
+#rightbox {
+    background-color: #ffffff;
+}
+
+#products thead {
+    background-color: #589be6;
+    color: #ffffff;
+}
+
+#products th {
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    border-top: none;
+}
+
+#products thead td {
+    border: 1px solid #fff;
+    border-top: none;
+    text-align: center;
+}
+
+#products td,
+.drugel td {
+    text-align: center;
+    border: 1px solid #cfcfcf;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.eating {
+    background-color: rgb(108, 196, 78);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #fff;
+}
+
+.nutritiontable {
+    width: 100%;
+}
+
+.nutritiontable thead {
+    font-weight: bold;
+    background-color: #dae3ea;
+}
+
+.nutritiontable th {
+    min-height: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #589be6;
+    min-width: 17px;
+}
+
+.nutritiontable td {
+    min-height: 40px;
+    height: 40px;
+    border: 1px solid #589be6;
+    padding: 0px 10px;
+}
+
+#delete:hover {
+    cursor: pointer;
+}
+
+.daytype {
+    clear: both;
+}
+
+.daytype>span {
+    color: #fff;
+    padding-right: 10px;
+}
+
+select[size].typeselect {
+    width: auto!important;
+    display: inline-block!important;
+    border: none;
+    background-color: rgb(88, 155, 230);
+    color: #fff;
+}
+
+select[size].typeselect:hover {
+    box-shadow: 0 0 5px #ffa726;
+}
+
+.foodheader {
+    display: flex;
+    background-color: #589be6;
+    color: #ffffff;
+}
+
+.table-header {
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    border-top: none;
+}
+
+.panel.panel-default {
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.panel-default .panel-heading {
+    margin: 0px!important;
+}
+
+.panel .collapse,  .panel .collapsing{
+    margin: 0;
+}
+
+#find.width {
+    padding: 5px;
+    height: 40px;
+    -webkit-transition: width 0.35s ease;
+    -moz-transition: width 0.35s ease;
+    -o-transition: width 0.35s ease;
+    transition: width 0.35s ease;
+    float: right;
+}
+
+#find.collapse.in {
+    width: 100%;
+}
+
+.right .row.box.cap {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.changedayblock {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.right .row.box.cap>.title {
+    flex-grow: 1;
+}
+
+.right .row.box.cap>#findbtn {
+    width: 40px;
+    border: none;
+    background: #fff;
+}
+
+#foodstitle.collapsing {
+    display: none;
+}
+
+#find>input {
+    margin: 0;
+    position: relative;
+    /* height: auto; */
+    height: 100%;
+}
+
+
+/*ribbon*/
+
+.contentleft {
+    position: relative;
+}
+
+.ribbon {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.ribbon::before,
+.ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ribbon-top-right {
+    top: -10px;
+    right: -10px;
+}
+
+.box.title {
+    padding:0;
+    height:40px;
+}
+
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.ribbon-top-right::before {
+    top: 0;
+    left: 0;
+}
+
+.ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+}
+
+.ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+}
+
+table input {
+    margin:0!important;
+}
+/* Кнопка сохранения */
+.row.button {
+    padding: 10px 15px;
+    background: #fff;
+    border-top: 1px solid #cfcfcf;
+}
+
+.row.button input[type="submit"] {
+    background-color: #ffa726;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.row.button input[type="submit"]:hover {
+    background-color: #e69520;
+}
+
+/* Flex-layout для левой колонки чтобы кнопка всегда была видна */
+#left > .block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#left > .block > form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+#left #content {
+    flex: 1;
+    overflow: hidden;
+}
+
+.row.button {
+    flex-shrink: 0;
+    padding: 10px 15px;
+    background: #fff;
+    border-top: 1px solid #cfcfcf;
+}
+
+.row.button input[type="submit"] {
+    background-color: #ffa726;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.row.button input[type="submit"]:hover {
+    background-color: #e69520;
+}

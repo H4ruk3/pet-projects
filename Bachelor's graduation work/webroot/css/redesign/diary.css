@@ -1,0 +1,626 @@
+/*Calendar styles*/
+
+.calendar-left {
+    width: 30%;
+    /*background-color: #2ECC71;*/
+    background-color: rgb(108, 196, 78);
+    flex-grow: 1;
+    color: #fff;
+}
+
+#progs {
+    display: flex;
+    align-items: stretch;
+}
+
+.calendar {
+    max-width: 550px;
+    width: 70%;
+}
+
+.num-date {
+    text-align: center;
+    /*font-size: 150px;*/
+    font-size: 11vw;
+    margin: 0 auto;
+    font-weight: 700;
+    color: #fff;
+}
+
+.dayleft {
+    text-align: center;
+    margin: 0px auto;
+    /*font-size: 30px;*/
+    font-size: 2vw;
+    position: relative;
+    margin-top: -45px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.create-event {
+    /*font-size: 18px;*/
+    font-size: 1vw;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.create-event>span {
+    flex-grow: 1;
+}
+
+.add-event {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 50%;
+    border: solid white 2px;
+    position: relative;
+    flex: 0 0 20px;
+}
+
+.event-line {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.add-event>.plus {
+    font-size: 20px;
+    position: relative;
+    line-height: 16px;
+    text-align: center;
+    width: 16px;
+    display: block;
+}
+
+.current-events {
+    margin-left: 20px;
+    padding: 0 10px;
+}
+
+.posts {
+    font-size: 18px;
+}
+
+.current-events>ul>li {
+    list-style: none;
+    margin-left: -15px;
+}
+
+.current-events>ul>li>#buttons {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.add-event:hover {
+    cursor: pointer;
+    color: #ffa726;
+    border-color: #ffa726;
+}
+
+#progs {
+    min-height: 460px;
+}
+
+#hellopreloader>p {
+    display: none;
+}
+
+#hellopreloader_preload, #preloader {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff url(/img/ball-triangle.svg) center center no-repeat;
+    background-size: 66px;
+}
+
+#preloader {
+    min-height: 200px;
+    height: 200px;
+}
+
+.clndr {
+    height: 100%;
+}
+
+.calendar .clndr .clndr-table {
+    height: calc(100% - 100px);
+}
+
+
+/* Right block styles */
+
+.head {
+    margin-left: 19%;
+}
+
+.c1 {
+    border: 1px solid #122b40;
+    border-radius: 4px;
+    border-color: #ddd;
+    /*border-top-left-radius: 3px;*/
+    margin: 10px 0px;
+    min-height: 100px
+    /*padding: 10px;*/
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.dayheader {
+    color: #fff;
+    background-color: #ffa726;
+    border-color: #204d74;
+    padding: 1px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.excersicedata {
+    overflow: hidden;
+}
+
+.wp-block.property.list {
+    border: 1px solid #e0eded;
+    margin-bottom: 15px !important;
+}
+
+.wp-block {
+    margin: 0 0 15px 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+}
+
+.wp-block.property.list {
+    padding: 15px 15px 0 15px;
+}
+
+.wp-block.property.list {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wp-block .wp-block-body {
+    padding: 15px;
+}
+
+.wp-block.property.list .wp-block-img {
+    display: table-cell;
+    width: 250px;
+}
+
+.wp-block.property.list .wp-block-img img {
+    width: 100%;
+}
+
+.wp-block.property.list .wp-block-content .content-title {
+    font-size: 20px;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.wp-block.property.list .wp-block-body .wp-block-content {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 15px;
+}
+
+.wp-block.property.list .wp-block-content .description {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0eded;
+}
+
+.wp-block.property.list .wp-block-footer ul.aux-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #fcfcfc;
+    border-top: 1px solid #e0eded;
+}
+
+.wp-block.property.list .wp-block-footer ul.aux-info li {
+    display: table-cell;
+    padding: 10px 15px;
+    vertical-align: middle;
+    border-right: 1px solid #e0eded;
+}
+
+.ribbon.base {
+    background: #3498db;
+    color: #fff;
+    border-right: 5px solid #8bc4ea;
+}
+
+.ribbon {
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    padding: 15px;
+}
+
+.base {
+    background: #3498db;
+    color: #fff !important;
+}
+
+.ribbon:before,
+.ribbon:after {
+    content: '';
+    position: absolute;
+    left: -9px;
+    border-left: 10px solid transparent;
+}
+
+.ribbon:before {
+    top: 0;
+}
+
+.ribbon.base:before {
+    border-top: 27px solid #3498db;
+}
+
+.ribbon.base:after {
+    border-bottom: 27px solid #3498db;
+}
+
+.ribbon:after {
+    bottom: 0;
+}
+
+.helpblock {
+    height: calc(100% - 120px);
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.cont>.c1 {
+    margin: 0;
+    border: 0;
+}
+
+.c1 .header>h2 {
+    font-size: 1em;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+}
+
+.checkbox {
+    padding-left: 30px;
+}
+
+.modal-footer>input {
+    width: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.tableheader {
+    background-color: #ffa726;
+    color: #fff;
+}
+
+.icon.count {
+    height: 20px;
+    width: 25px;
+}
+
+.element.tableheader {
+    border-right: 1px solid #fff;
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.rating-container {
+    display: inline;
+}
+
+.element {
+    height: auto;
+    line-height: 1;
+    min-height: 30px;
+    padding: 10px;
+}
+
+.rowelement {
+    display: flex;
+}
+
+.element.tableheader:first-child {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentblock .element>.firstrow {
+    border-bottom: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstrow>span {
+    padding-left: 5px;
+}
+
+#contentblock .element>.secondrow {
+    height: 100%;
+}
+
+.mycol-2 {
+    width: 20%;
+}
+
+.mycol-4 {
+    width: 40%;
+}
+
+.secondrow>.col:first-child {
+    border-right: 1px solid #fff;
+}
+
+.secondrow>.col {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    margin: 2px;
+}
+
+.c1>.row>.header.day.blue {
+    display: flex;
+}
+
+.c1>.row>.header.day.blue>h2.right {
+    text-align: right;
+}
+
+.c1>.row>.header.day.blue>h2.left {
+    flex-grow: 1;
+}
+
+.rating-disabled .rating-input,
+.rating-disabled .rating-stars {
+    cursor: default!important;
+}
+
+.cap {
+    clear: both;
+}
+
+.righttoolbar {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0!important;
+    background-color: #ffffff;
+}
+
+ul.nav-tabs {
+    padding: 0;
+}
+
+.nav-tabs>li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs.tabs>li.active>a:focus,
+.nav-tabs.tabs>li.active>a:hover {
+    background-color: #f57c00;
+    color: #ffffff;
+    border-left: 1px solid #e65100;
+}
+
+.righttoolbar:focus,
+.righttoolbar:hover,
+.nav-tabs.tabs>li>a:focus,
+.nav-tabs.tabs>li>a:hover {
+    background-color: #ff9800;
+    color: #ffffff;
+    border-left: 1px solid #e65100;
+    text-decoration: none;
+}
+
+.tabs>li {
+    width: 50%;
+}
+
+#tab2 {
+    background-color: #ffff;
+}
+
+.diaryinput {
+    width: 100%;
+    min-width: 40px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons>input {
+    margin: 10px 10px;
+}
+
+.illegaldata {
+    padding: 40px;
+    border-top: 2px solid #e65100;
+    clear: both;
+}
+input.diaryinput[type="number"] {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+#RatingDialog #rate {
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 100%!important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+#progname #star {
+    width:auto!important;
+    display:inline;
+}
+#progname #star>img {
+    height: 25px;
+}
+.container {
+    overflow: hidden;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .current-events>ul>li {
+        margin-left: -25px;
+    }
+    .btn {
+        font-size: 0.8vw;
+        padding: 4px 6px;
+    }
+    .secondrow>.col {
+        font-size: 1.1vw;
+    }
+    .calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+        left: 15px!important;
+    }
+    .calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+        right: 15px!important;
+    }
+    .calendar .clndr .clndr-controls {
+        min-height: 85px!important;
+    }
+    .calendar .clndr .clndr-table {
+        height: calc(100% - 85px);
+    }
+    .cap span {
+        padding-left: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+    .current-events>ul>li {
+        margin-left: -25px;
+    }
+    .btn {
+        padding: 4px 6px;
+    }
+    .create-event {
+        font-size: 10px;
+    }
+    #left {
+        margin-bottom: 10px;
+    }
+    .calendar .clndr .clndr-table {
+        height: calc(100% - 85px);
+    }
+    .dayleft {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .secondrow>.col {
+        font-size: 11px;
+    }
+    .calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+        left: 15px!important;
+    }
+    .calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+        right: 15px!important;
+    }
+    .cap span {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+    .calendar .clndr .clndr-table {
+        height: calc(100% - 70px)!important;
+    }
+}
+
+@media (max-width: 480px) {
+    #left {
+        padding: 0;
+    }
+    #progs {
+        flex-direction: column;
+    }
+    .calendar-left {
+        width: 100%;
+        order: 2;
+    }
+    .calendar {
+        width: 100%;
+    }
+    .right {
+        padding: 0;
+        margin-top: 2px;
+    }
+    .dayleft {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .create-event {
+        font-size: 10px;
+    }
+    .secondrow>.col {
+        font-size: 11px;
+    }
+    .cap span {
+        padding-left: 5px;
+    }
+}

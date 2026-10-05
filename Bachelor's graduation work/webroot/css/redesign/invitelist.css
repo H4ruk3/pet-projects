@@ -1,0 +1,118 @@
+#content {
+  min-height: 0;
+}
+.content .header {
+    padding: 0 10px;
+    align-items: start;
+    height: auto;
+    border: none;
+  }
+  .content .header>img {
+    height: 60px;
+    margin: 10px;
+  }
+  .content .header .userinfo {
+    margin: 10px 0;
+    flex-grow: 1
+  }
+  .content .header .userinfo>h2 {
+    margin-top:0;
+  }
+  .content .header .check{
+    align-self: flex-end;
+    position: relative;
+    height: 40px;
+    width: 48px;
+  }
+  .content .header .check button {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    min-width: 30px;
+    color: #f9a11b;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+  }
+  .content .header .check button:hover {
+    border-color: #f9a11b;
+  }
+  .content .header .check button>span {
+    width: 0;
+    overflow: hidden;
+    display: inline-block;
+    transition: 1s;
+  }
+  .content .header .check button:hover>span {
+    width:85px;
+    transition: 1s;
+  }
+
+  .content .header .check input[type="checkbox"] {
+  height: 48px;
+    width: 48px;
+    /* background: rgba(0,0,0,0); */
+    /* background: #f00; */
+    opacity: 0;
+  }
+.content .header .check img {
+      position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+
+  .content .header .check input[type="checkbox"]:checked+img{
+    display:block;
+  }
+
+
+  .content .header .buttons{
+    align-self: flex-end;
+    position: relative;
+    height: 40px;
+    width: 100%;
+  }
+  .content .header .buttons button {
+    float: right;
+    right: 0;
+    height: 30px;
+    min-width: 30px;
+    color: #f9a11b;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+  }
+  .content .header .buttons button:hover {
+    border-color: #f9a11b;
+  }
+  .content .header .buttons button>span {
+    width: 0;
+    overflow: hidden;
+    display: inline-block;
+    transition: 1s;
+  }
+  .content .header .buttons button:hover>span {
+    width:85px;
+    transition: 1s;
+  }
+
+  .content .header .buttons input[type="checkbox"] {
+  height: 48px;
+    width: 48px;
+    /* background: rgba(0,0,0,0); */
+    /* background: #f00; */
+    opacity: 0;
+  }
+.content .header .buttons img {
+      position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+
+  .content .header .buttons input[type="checkbox"]:checked+img{
+    display:block;
+  }

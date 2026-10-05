@@ -1,0 +1,220 @@
+.modal-content {
+	background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 3.84px 4.16px rgba(56, 56, 56, 0.1);
+    border-radius: 0;
+}
+.modal-header {
+	border: none;
+    padding-bottom: 0;
+}
+.modal-title {
+	text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-family: "Arial";
+    color: rgb(97, 97, 97);
+}
+.modal-body {
+	width: 70%;
+    margin-left: 15%;
+    padding: 0;
+}
+.modal-footer {
+	border: none;
+	margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0;
+    margin-bottom: 45px;
+    display: flex;
+}
+.modal-footer>input:first-child {
+	    width: 50%;
+    margin-right: 5px;
+}
+.modal-footer>input:last-child {
+	width: 50%;
+    margin-left: 5px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  padding-left: 65px!important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    height: 28px;
+}
+.switch:hover {
+	cursor: pointer;
+}
+.switch:hover>.slider.round {
+	box-shadow: 0 0 5px #ffa726;
+    border-color: #ffa726;
+    border: 2px solid #ffa726;
+}
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f57c00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  width: 56px;
+  height: 28px;
+  border: 2px solid #ccc;
+}
+.slider.round:hover, .select-selected:hover, .select-selected.select-arrow-active {
+	box-shadow: 0 0 5px #ffa726;
+    border-color: #ffa726;
+    border: 2px solid #ffa726;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  min-height: 40px;
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the items (options), including the selected item:*/
+.select-items>div,.select-selected {
+  min-height: 40px;
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.select-items div.group {
+  cursor: auto;
+  font-weight: bold;
+  padding-left: 16px;
+}
+.select-selected {
+  background-color: #fff;
+  border: 2px solid #c5c5c5a1;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+.select-items>div.ps__scrollbar-y-rail {
+  padding: 0px;
+    border: none;
+    cursor: auto;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-height:300px;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.select-items div.group:hover, .same-as-selected {
+  background-color: #fff;
+  cursor: auto;
+}
+select[disabled] + .select-selected {
+	border: 2px solid #eee;
+	color: #c5c5c5;
+  height: 0;
+    min-height: 0;
+    padding: 0;
+    border: none;
+    display: none;
+    transition: 1s;
+}
+select[disabled] + .select-selected>span {
+  display:none;
+  transition: 1s;
+}
+
+select[disabled] + .select-selected:hover {
+	border: 2px solid #eee;
+	box-shadow: none;
+}
+
+select[disabled] + .select-selected:after {
+	border-color: #c5c5c5 transparent transparent transparent;
+}
+.select-selected>.search {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 39px;
+  border: none;
+  padding-right: 30px;
+  display: none;
+}
+.select-selected.select-arrow-active>.search{
+  display:block;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ваш личный тренер | Регистрация</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login1.css">
+  <link rel="stylesheet" href="bootmetro-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-clockpicker.min.css">
+</head>
+<body>
+    <style>
+        .cap span{
+    line-height: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-left: 10%;
+    font-size: 16PX;
+      color: rgb(97, 97, 97);
+    }
+
+
+  h2 {
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+  line-height: 20px;
+}
+  .help {
+    float: right;
+    background-color: #cfcfcf;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+  }
+  .help:hover {
+    cursor:pointer;
+    border: 1px solid black; 
+    line-height: 18px;
+  }
+  hr {
+        color: #cfcfcf;
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+    margin: 5px 0px;
+  }
+  .content {
+    padding: 20px 10%;
+  }
+  .container {
+    overflow: auto;
+    height: auto;
+  }
+  footer {
+        height: 50px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    background-color: #f8f8f8;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+  }
+  main {
+    padding: 60px 0px;
+  }
+  .w {
+    min-height: 100%;
+    position: relative;
+  }
+  .box {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0px 3px 0.96px 1.04px rgba(56, 56, 56, 0.1);
+}
+.btnblock {
+  margin-top:10px;
+}
+.navbar {
+  position: fixed;
+  width:100%;
+  z-index:100;
+} 
+.affix {
+      top: 50px;
+    width: 55%;
+        bottom: 61px;
+    height: auto;
+}
+.content {
+    padding: 20px 40px;
+}
+.cap span {
+      padding-left: 40px;
+}
+.helpblock {
+  position: fixed;
+    width: 55.66%;
+}
+.input-group-addon {
+  z-index: 100;
+}
+#btn2 {
+      width: 118px;
+}
+.btn {
+      background-color: #ffa726;
+    color: white;
+}
+</style>
+<div class="w">
+	<nav class="navbar navbar-default">
+  <!-- Контейнер (определяет ширину Navbar) -->
+  <div class="container-fluid">
+    <!-- Заголовок -->
+    <div class="navbar-header">
+      <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Бренд или название сайта (отображается в левой части меню) -->
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <!-- Содержимое основной части -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Тренировочная программа</a></li>
+        <li><a href="#">Распоядок дня</a></li>
+        <li><a href="#">Дневник питания</a></li>
+        <li><a href="#">Дневник тренировок</a></li>
+        <li><a href="#">Калькуляторы</a></li>
+        <li><a href="#">Справочники</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav right">
+      	<li><a href="#">Профиль</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+	<div class="container">
+    <div class="row">
+		<div id="left" class="col-lg-4 left">
+      <div class="block">
+			<div class="row box cap">
+				<span>Активный распорядок дня</span>
+			</div>
+			<div id="content" class="row box content">
+				<h2>Активный распорядок дня</h2>
+        <hr>
+
+        <div class="row">
+          <div class="btn"><span class="glyphicon glyphicon-pencil"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-eye-open"></span></div>
+        </div>
+			</div>
+
+      <H2>Список распорядков дня</H2>
+      <div id="content" class="row box content">
+        <h2>Распорядок 1</h2>
+        <hr>
+
+        <div class="row">
+          <div class="btn"><span class="glyphicon glyphicon-pencil"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-eye-open"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-trash"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-ok"></span></div>
+        </div>
+      </div>
+      <div id="content" class="row box content">
+        <h2>Распорядок 2</h2>
+        <hr>
+
+        <div class="row">
+          <div class="btn"><span class="glyphicon glyphicon-pencil"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-eye-open"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-trash"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-ok"></span></div>
+        </div>
+      </div>
+      <div id="content" class="row box content">
+        <h2>Распорядок 3</h2>
+        <hr>
+
+        <div class="row">
+          <div class="btn"><span class="glyphicon glyphicon-pencil"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-eye-open"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-trash"></span></div>
+          <div class="btn"><span class="glyphicon glyphicon-ok"></span></div>
+        </div>
+      </div>      
+
+
+      </div>
+    </div>
+		<div class="col-lg-8 ">
+
+    <div class="row box cap">
+        <span>Подробная информация</span>
+      </div>
+    
+    <!--Содержимое левого блока-->
+    <div id="content" class="row box content helpblock" data-spy="affix" data-offset-top="40">
+      <h2>Активный распорядок дня</h2>
+      <h4>Тренировочный день</h4>
+      <hr>
+      <p> <span>09:00</span> Подъём</p>
+      <p> <span>09:30</span> 1 приём пищи</p>
+      <p> <span>14:00</span> Тренировка</p>
+      <p> <span>17:30</span> 2 приём пищи</p>
+      <p> <span>19:30</span> 3 приём пищи</p>
+      <p> <span>22:00</span> Сон</p>
+      <br>
+      <h4>День отдыха</h4>
+      <hr>
+      <p> <span>09:00</span> Подъём</p>
+      <p> <span>09:30</span> 1 приём пищи</p>
+      <p> <span>14:00</span> 2 приём пищи</p>
+      <p> <span>17:30</span> 3 приём пищи</p>
+      <p> <span>19:30</span> 4 приём пищи</p>
+      <p> <span>22:00</span> Сон</p>
+    </div>
+
+  </div>
+</div>
+</main>
+<footer>footer</footer>
+</div>
+	<script src="js/jquery-1.10.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-clockpicker.min.js"></script>
+    <script type="text/javascript">
+$(".clockpicker").clockpicker({
+                    donetext: "Установить"});
+
+    function showday1() {
+      $(".day1").attr("style", "display: block");
+      $(".day2").attr("style", "display: none");
+      $("#btn2").removeClass("active");
+      $("#btn1").addClass("active");
+    }
+    function showday2() {
+      $(".day2").attr("style", "display: block");
+      $(".day1").attr("style", "display: none");
+      $("#btn1").removeClass("active");
+      $("#btn2").addClass("active");
+    }
+//$('#leftblock').perfectScrollbar();
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ваш личный тренер | Регистрация</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login1.css">
+  <link rel="stylesheet" href="bootmetro-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+  <!-- Контейнер (определяет ширину Navbar) -->
+  <div class="container-fluid">
+    <!-- Заголовок -->
+    <div class="navbar-header">
+      <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Бренд или название сайта (отображается в левой части меню) -->
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <!-- Содержимое основной части -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Тренировочная программа</a></li>
+        <li><a href="#">Распоядок дня</a></li>
+        <li><a href="#">Дневник питания</a></li>
+        <li><a href="#">Дневник тренировок</a></li>
+        <li><a href="#">Калькуляторы</a></li>
+        <li><a href="#">Справочники</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav right">
+      	<li><a href="#">Профиль</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+	<div class="container">
+		<div id="left" class="col-lg-6 left">
+      <div class="block">
+			<div class="row box cap">
+				<a href=# class="back"><i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i></a>
+				<span>Создание программы тренировок</span>
+			</div>
+			<div id="content" class="row box content">
+				<form>
+					<div class="formelement">
+						<label for="name">Название программы тренировок</label>
+						<input id="name" type="text" name="name" class="form-controll"/>
+					</div>
+					<div class="btn-group" role="group" aria-label="...">
+					  <button type="button" class="btn btn-default active">День 1</button>
+					  <button type="button" class="btn btn-default">День 2</button>
+					  <button type="button" class="btn btn-default">День 3</button>
+					  <button type="button" class="btn btn-default">День 1</button>
+					  <button type="button" class="btn btn-default">День 2</button>
+					  <button type="button" class="btn btn-default">День 3</button>
+					  <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i></button>
+					</div>
+
+					<div class="day">
+						<H4>Название упражнения</H4>
+						<div class="col-lg-6">
+							<div class="formelement">
+								<label for="cnt">Количество подходов</label>
+								<input id="cnt" type="text" name="cnt" class="form-controll"/>
+							</div>
+							<div class="formelement">
+								<label for="cnt">Вес</label>
+								<input id="cnt" type="text" name="cnt" class="form-controll"/>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="formelement">
+								<label for="cnt">Количество повторений</label>
+								<input id="cnt" type="text" name="cnt" class="form-controll"/>
+							</div>
+							<div class="formelement">
+								<label for="cnt" style="height: 14px"></label>
+								<input id="cnt" type="text" name="cnt" class="form-controll"/>
+							</div>
+						</div>
+						<div class="col-lg-12 add">
+							Перетащите сюда упражнения из списка, что бы добавить их на этот день
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+    </div>
+		<div class="col-lg-6 right">
+    <div class="block">
+			<div class="row box cap">
+				<a href=# class="back"><i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i></a>
+				<span>Создание программы тренировок</span>
+			</div>
+			<div id="rightbox" class="box1">
+				<div class="panel-group" id="accordion">
+  <!-- 1 панель -->
+  <div class="panel panel-default">
+    <!-- Заголовок 1 панели -->
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. Bootstrap 3 - Введение</a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <!-- Содержимое 1 панели -->
+      <div class="panel-body">
+        
+
+        <div class="panel-group" id="subaccordion">
+  <!-- 1 панель -->
+  <div class="panel panel-default">
+    <!-- Заголовок 1 панели -->
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#subaccordion" href="#subcollapseOne">1. Bootstrap 3 - Введение</a>
+      </h4>
+    </div>
+    <div id="subcollapseOne" class="panel-collapse collapse in">
+      <!-- Содержимое 1 панели -->
+      <div class="panel-body">
+        <p>Bootstrap 3 - это framework для быстрого и гармоничного создания дизайна сайта. Начать изучать эту технологию лучше с <a href="http://itchief.ru/lessons/bootstrap-3/19-introduction-to-twitter-bootstrap-3" target="_blank">урока</a>, который познакомит вас с её возможностями и преимуществами.</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <!-- Заголовок 1 панели -->
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#subaccordion" href="#subcollapseToo">1. Bootstrap 3 - Введение</a>
+      </h4>
+    </div>
+    <div id="subcollapseToo" class="panel-collapse collapse in">
+      <!-- Содержимое 1 панели -->
+      <div class="panel-body">
+        <p>Bootstrap 3 - это framework для быстрого и гармоничного создания дизайна сайта. Начать изучать эту технологию лучше с <a href="http://itchief.ru/lessons/bootstrap-3/19-introduction-to-twitter-bootstrap-3" target="_blank">урока</a>, который познакомит вас с её возможностями и преимуществами.</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <!-- Заголовок 1 панели -->
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#subaccordion" href="#subcollapseThree">1. Bootstrap 3 - Введение</a>
+      </h4>
+    </div>
+    <div id="subcollapseThree" class="panel-collapse collapse in">
+      <!-- Содержимое 1 панели -->
+      <div class="panel-body">
+        <p>Bootstrap 3 - это framework для быстрого и гармоничного создания дизайна сайта. Начать изучать эту технологию лучше с <a href="http://itchief.ru/lessons/bootstrap-3/19-introduction-to-twitter-bootstrap-3" target="_blank">урока</a>, который познакомит вас с её возможностями и преимуществами.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- 2 панель -->
+  <div class="panel panel-default">
+    <!-- Заголовок 2 панели -->
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. Bootstrap 3 - Начало работы</a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <!-- Содержимое 2 панели -->
+      <div class="panel-body">
+        <p>Изучение технологии лучше всего начать с простого <a href="http://itchief.ru/lessons/bootstrap-3/20-lesson-2-getting-started-with-twitter-bootstrap-3" target="_blank">урока</a>. На котором изучается как подключить Twitter Bootstrap к своему проекту и вывести с помощью него простейший текст.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 3 панель -->
+  <div class="panel panel-default">
+    <!-- Заголовок 3 панели -->
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. Bootstrap 3 - Создание сайта</a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <!-- Содержимое 3 панели -->
+      <div class="panel-body">
+        <p>Создание сайта - это трудоемкий процесс, который состоит из нескольких этапов. В качестве примера рассмотрим создание сайта визитки на этом <a href="http://itchief.ru/lessons/bootstrap-3/website-creation-business-cards-(part-1)" target="_blank">уроке</a>, в котором рассмотрим процесс загрузки необходимых пакетов и проектирования макета сайта.</p>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+		</div>
+	</div>
+  </div>
+
+</div>
+<div class="footer">footer</div>
+	<script src="js/jquery-1.10.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+  <script type="text/javascript">
+    $('#content').perfectScrollbar();
+    $('#rightbox').perfectScrollbar();
+//$('#leftblock').perfectScrollbar();
+  </script>
+</body>
+</html>

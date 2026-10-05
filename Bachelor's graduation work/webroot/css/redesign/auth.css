@@ -1,0 +1,105 @@
+body {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    height: auto;
+}
+
+input[type="email"], input[type="password"] {
+  color: #9d9d9d!important;
+  padding-top: 8px!important;
+}
+input[type="email"]:-webkit-autofill,
+input[type="email"]:-webkit-autofill:hover, 
+input[type="email"]:-webkit-autofill:focus,
+input[type="email"]:-webkit-autofill, 
+input[type="password"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill:hover, 
+input[type="password"]:-webkit-autofill:focus
+input[type="password"]:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: #9d9d9d;
+}
+.password {
+  position:relative;
+}
+.eye{
+  position: absolute;
+    right: 10px;
+    top: 14px;
+    color: #cfcfcf;
+}
+.eye:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.logo {
+  text-align: center;
+}
+.regblock {
+  width:70%;
+  margin-left: 15%;
+}
+.regblock h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(97, 97, 97);
+}
+
+.social img, .social svg {
+  height: 40px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.social svg:hover path {
+  fill: #ff9800;
+}
+.social svg:hover rect {
+  stroke: #ff9800;
+}
+.recaptcha>div {
+  margin: auto;
+}
+/************************************************************
+mobile
+************************************************************/
+@media (max-width: 480px) { 
+  .dialog {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 20px 0px;
+  }
+}
+/************************************************************
+planshet
+************************************************************/
+@media (min-width: 481px) and (max-width: 1024px) { 
+  .dialog {
+    width: 80%;
+    max-width:600px;
+    box-shadow: 0px 0px 3.84px 4.16px rgba(56, 56, 56, 0.1);
+    background-color: rgb(245, 245, 245);
+    padding: 20px 0px;
+  }
+}
+
+@media (min-width: 1025px) { 
+  .dialog {
+    width: 80%;
+    max-width:600px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 3.84px 4.16px rgba(56, 56, 56, 0.1);
+    padding: 20px 0px;
+  }
+}

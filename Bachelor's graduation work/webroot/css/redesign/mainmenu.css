@@ -1,0 +1,76 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0px 2px 3px 1.04px rgba(56, 56, 56, 0.1);
+    border-radius: 0;
+}
+
+footer {
+    height: 60px;
+    z-index: 100!important;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    box-shadow: 0px -2px 3px 1.04px rgba(56, 56, 56, 0.1);
+}
+
+main {
+    padding: 60px 0px 70px 10px;
+        min-height: 100%;
+}
+
+.copyright {
+    float: left;
+    line-height: 60px;
+}
+
+.contacts {
+    float: right;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.contacts .title {
+    font-size: 18px;
+}
+
+input[type='button'],
+input[type='submit'] {
+    -webkit-transition: all 0.8s ease;
+    ;
+    -moz-transition: all 0.8s ease;
+    ;
+    -o-transition: all 0.8s ease;
+    ;
+    transition: all 0.8s ease;
+}
+
+input[type='button']:hover,
+input[type='submit']:hover {
+    background-color: #f57c00;
+    ;
+}
+
+.navbar .divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #c5c5c5;
+}
+
+.navbar-inverse .divider-vertical {
+    border-right-color: #222222;
+    border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav>.divider-vertical {
+        display: none;
+    }
+}
+
+.nav i {
+    margin-right: 5px;
+}

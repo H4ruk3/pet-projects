@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ваш личный тренер | Регистрация</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="bootmetro-icons.css">
+</head>
+<body>
+	<!--<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top bs_cont">
+  			<div class="container">
+  				<div class="navbar-header">
+					<button type="button" data-target="#collapse" data-toggle="collapse" class="navbar-toggle">
+					    <span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>-->
+  				<!--
+  				<ul class="nav navbar-nav navbar-right">
+          			<li>
+          				<a class="menu" href="http://vk.com/bi.oreluniver">
+          					<img class="soc" src="images/vk.png"/>
+          				</a>
+
+          			</li>
+          			<li>
+          				<a class="menu" href="http://www.facebook.com/bi.oreluniver">
+          					<img class="soc" src="images/facebook.png"/>
+          				</a>
+
+          			</li>
+          			<li>
+          				<a class="rightblock" href="#test"><span class="rightcontact">Проконсультироваться</span> <br/>
+          				<span class="phone">8-960-656-55-57</span></a>
+          			</li>
+          		</ul>
+  				-->
+  				<!--
+          		<ul class="nav navbar-nav navbar-collapse hidden-lg collapse" id="collapse">
+            		<li class="active dropdown-toggle" data-toggle="dropdown"><a class="menu dropdown-toggle" data-toggle="dropdown" href="#">Услуги <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu">
+                			<li ><a class="dropdownelement" href="">Создание бизнеса</a></li>
+                			<li ><a class="dropdownelement" href="projectsforbiznes.html">Проекты для бизнеса</a></li>
+			                <li ><a class="dropdownelement" href="#">Бизнес-консалтинг</a></li>
+              			</ul>
+            		</li>
+            		<li class="dropdown-toggle"><a class="menu dropdown-toggle" href="#" data-toggle="dropdown">ПРОЕКТЫ <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+                			<li ><a class="dropdownelement" data-target="allprojects.html" href="projects.html">Новые проекты</a></li>
+                			<li ><a class="dropdownelement" href="actualproject.html">Действующие проекты</a></li>
+			                <li ><a class="dropdownelement" href="allprojects.html">Реализованные проекты</a></li>
+              			</ul>
+            		</li>
+            		<li><a class="menu" href="mentors.html">МЕНТОРЫ</a></li>
+            		<li class="dropdown-toggle"><a class="menu dropdown-toggle" data-toggle="dropdown" href="#contact">МЕРОПРИЯТИЯ <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+                			<li ><a class="dropdownelement" href="#">Анонсы мероприятий</a></li>
+                			<li ><a class="dropdownelement" href="#">Отчеты о прошедших мероприятиях</a></li>
+			                <li ><a class="dropdownelement" href="#">Новости науки и бизнеса</a></li>
+              			</ul>
+            		</li>
+            		<li><a class="menu" href="#contact">РЕЗУЛЬТАТЫ РАБОТЫ</a></li>
+            		<li><a class="menu" href="#contact">ПОЛЕЗНЫЕ МАТЕРИАЛЫ</a></li>
+            		<li><a class="menu" href="#contact">О НАС</a></li>
+            		<li><a class="menu" href="#contact">КОНТАКТЫ</a></li>
+          		< /ul>
+          	</div>
+		</nav>
+
+	</div>-->
+
+	<div id="login" class="container regmain">
+		<div class="regform">
+      <div class="row tabs">
+        <div class="col-lg-3" onclick="login()">Вход</div>
+        <div class="col-lg-3 enactive" onclick="reg()">Регистрация</div>
+        <div class="col-lg-6 enactive last">Восстановить пароль</div>
+      </div>  
+      <H1>Вход на сайт</H1>
+      <form>
+      <input type="text" class="text mail" placeholder="Логин"/>
+      <input type="password" class="text pass" placeholder="Пароль" />
+      <input type="submit" class="button" value="Войти" />
+      </form>
+    </div>
+	</div>
+  <!--Регистрация -->
+  <div id = "reg" class="container regmain">
+    <div class="regform">
+      <div class="row tabs">
+        <div class="col-lg-3 enactive" onclick="login()">Вход</div>
+        <div class="col-lg-3" onclick="reg()">Регистрация</div>
+        <div class="col-lg-6 enactive last">Восстановить пароль</div>
+      </div>  
+      <H1>Регистрация нового пользователя</H1>
+      <form>
+      <input type="text" class="text mail" placeholder="Логин"/>
+      <input type="password" class="text pass" placeholder="Пароль" />
+      <img src="img/hero-recaptcha-demo.gif" alt="reCAPTCHA demo" style="height:110px">
+      <input type="submit" class="button" value="Зарегистрироваться" />
+      </form>
+    </div>
+  </div>
+
+	<script src="js/jquery-1.10.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function login() {
+      $("#login").attr("style", "display: block");
+      $("#reg").attr("style", "display: none");
+    }
+    function reg() {
+     $("#reg").attr("style", "display: block");
+      $("#login").attr("style", "display: none"); 
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<?= $this->Html->css('redesign/profile.css') ?>
+<?= $this->Html->css('redesign/cropper.min.css') ?>
+<?= $this->Html->css('../bootstrap/css/bootstrap-datetimepicker.min.css') ?>
+
+<?= $this->fetch("content") ?>
+
+<style>
+  div.custom_file_upload {
+  width: 230px;
+  height: 20px;
+  margin: 40px auto;
+}
+
+input.file {
+  width: 150px;
+  height: 20px;
+  border: 1px solid #BBB;
+  border-right: 0;
+  color: #888;
+  padding: 5px;
+  
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+  outline: none;
+}
+.input-group.img {
+  width:100%;
+}
+.img .input-group-addon {
+      padding: 10px 12px;
+}
+
+span.file_upload {
+  width: 40px;
+    height: 100%;
+    left: 100%;
+    margin-left: -40px;
+  display: inline;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0;
+  border-left: 1px solid #ccc;
+}
+span.file_upload:last-child {
+  border-left: 1px solid #ccc;
+}
+span.file_upload:before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  text-align: center;
+  
+  cursor: pointer;
+}
+
+span.file_upload input {
+  position: relative;
+  height: 30px;
+  width: 250px;
+  display: inline;
+  cursor: pointer;
+  opacity: 0;
+}
+.alert {
+      bottom: 56px;
+    position: fixed;
+    width: 50%;
+}
+
+
+
+  input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 2px solid #ddd;
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline:none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 2px;
+  background-color: #212121;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.numbutton {
+  top: 0px;
+}
+.numbutton:hover {
+  cursor: pointer;
+}
+input[type="number"] {
+  text-align: center;
+}
+</style>
+
+<div class="row">
+    <div class="col-lg-4 left">
+      <!--Название левого блока-->
+    
+      <div class="row box cap">
+        <span>Заполнение данных профиля</span>
+      </div>
+    
+    <!--Содержимое левого блока-->
+    <form method="POST" action="" onsubmit="return saveprofile();">
+      <? if (isset($user1)) { ?>
+      <input type="hidden" value="<?= $user->id ?>" name="profileid">
+      <? } ?>
+    <div id="content" class="row box content">
+      <div class="header active">
+      <H2>Личные данные<div class="help">?</div></H2>
+    </div>
+        <div class="form">
+          <div class="formelement">
+            <label for="fam">Фамилия</label>
+            <input id="fam" type="text" name="fam" required class="form-control" value="<?= $user->fam ?>"/>
+          </div>
+          <div class="formelement">
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name" required class="form-control" value="<?= $user->name ?>"/>
+          </div>
+          <div class="formelement">
+            <label for="sex">Пол</label>
+            <div class="row radiogroup">
+              <div class="col-lg-6">
+<<<<<<< HEAD
+                <input id="sex" type="radio" name="sex" class="form-control" value="male" <?= $user->sex=="male"?"checked":"" ?>/> Мужской
+              </div>
+              <div class="col-lg-6">
+                <input id="sex" type="radio" name="sex" class="form-control" value="female" <?= $user->sex=="female"?"checked":"" ?>/> Женский
+=======
+                <input id="sex" type="radio" name="sex"  value="male" <?= $user->sex=="male"?"checked":"" ?>/> Мужской
+              </div>
+              <div class="col-lg-6">
+                <input id="sex" type="radio" name="sex"  value="female" <?= $user->sex=="female"?"checked":"" ?>/> Женский
+>>>>>>> 1a890419bed8548c47a0683b1ec0f844bba92ae9
+              </div>
+            </div>
+          </div>
+          <div class="formelement">
+            <label for="birthday">Дата рождения</label>
+            <div class="input-group date" id="datetimepicker1">
+              <input id="date1" type="text" class="form-control" required name="birthday" placeholder="дд.мм.гггг" value="<?= $user->birthday!=null?$user->birthday->i18nFormat("dd.MM.yyyy"):""?>">
+              <span class="input-group-addon">
+                <span class="glyphicon-calendar glyphicon"></span>
+              </span>
+  
+            </div>
+
+
+            <!--<input id="birthday" type="text" name="birthday" class="form-control" value="<?= $user->birthday ?>"/>-->
+          </div>
+          <div class="formelement">
+            <label for="growth">Рост</label>
+              <div class="input-group">
+                    <!--<span class="input-group-addon glyphicon glyphicon-minus numbutton" onclick="this.parentNode.querySelector('input[type=number]').stepDown();"></span>-->
+                    <input type="number" min="20" max="250" id="growth" value="<?= $user->growth ?>" class="form-control" name="growth">
+                    <!--<span class="input-group-addon glyphicon glyphicon-plus numbutton" onclick="this.parentNode.querySelector('input[type=number]').stepUp();"></span>-->
+                    <span class="input-group-addon">см</span>
+                  </div>
+
+
+            <!--<input id="growth" type="number" name="growth" required min="20" max="250" class="form-control" value="<?= $user->growth ?>"/>-->
+          </div>
+          <div class="formelement">
+            <label for="weight">Вес</label>
+            <div class="input-group">
+              <input id="weight" type="number" name="weight" required min="20" max="250" class="form-control" value="<?= $user->weight ?>"/>
+              <span class="input-group-addon">кг</span>
+            </div>
+          </div>
+
+          <? if ($mode == "create") { ?>
+          <div class="formelement">
+            <label for="avatar">Аватар</label>
+            
+            <div class="input-group img" id="datetimepicker1">
+              <input type="text" class="form-control" name="file_info" id="file_info" onclick="openFileOption();">
+                <span class="input-group-addon file_upload" onclick="openFileOption();">
+                <span class="glyphicon glyphicon-upload"></span>
+              
+                <input type="file" id="file_upload" name="avatar" onchange="readURL(this);">
+              </span>
+            </div>
+
+
+            <!--<input type="file" name="avatar" id="image" />-->
+            <div class="image_container">
+              <img id="blah" src="#" alt="your image" />
+            </div>
+          </div>
+          <? } ?>
+        </div>
+      </div>
+
+
+<div id="content" class="row box content">
+      <div class="header">
+      <H2>Телосложение<div class="help">?</div></H2>
+    </div>
+      <div id="colapseblock">  
+        <div class="accordion-group">
+        <div class="form collapse in" id="form1">
+          <div class="formelement radiogroup" id="somatotypes">
+            <label for="somatotype">Выберите один из предложенных вариантов</label><br />
+<<<<<<< HEAD
+            <input id="somatotype" type="radio" name="somatotype" class="form-control" value = "1" <?= $user->somatotype=="1"?"checked":"" ?>/> Эндоморф <br />
+            <input id="somatotype" type="radio" name="somatotype" class="form-control" value = "2" <?= $user->somatotype=="2"?"checked":"" ?>/> Эктоморф <br />
+            <input id="somatotype" type="radio" name="somatotype" class="form-control" value = "3" <?= $user->somatotype=="3"?"checked":"" ?>/> Мезоморф <br />
+=======
+            <input id="somatotype" type="radio" name="somatotype"  value = "1" <?= $user->somatotype=="1"?"checked":"" ?>/> Эндоморф <br />
+            <input id="somatotype" type="radio" name="somatotype" value = "2" <?= $user->somatotype=="2"?"checked":"" ?>/> Эктоморф <br />
+            <input id="somatotype" type="radio" name="somatotype"  value = "3" <?= $user->somatotype=="3"?"checked":"" ?>/> Мезоморф <br />
+>>>>>>> 1a890419bed8548c47a0683b1ec0f844bba92ae9
+          </div>
+          <a href="#form2" onclick="hideel1()" data-toggle="collapse" data-parent="#colapseblock">Определить телосложение при помощи калькулятора</a>
+        </div>
+        <div class="form form2 collapse" id="form2">
+          <div class="formelement">
+            <label for="growth">Длина ног</label>
+            <div class="input-group">
+              <input type="number" min="20" max="250" id="growth" value="185" class="form-control" name="lenLeg">
+              <span class="input-group-addon">см</span>
+            </div>
+          </div>
+
+          <div class="formelement">
+            <label for="growth">Ширина плеч</label>
+            <div class="input-group">
+              <input type="number" min="20" max="250" id="growth" value="185" class="form-control" name="widthShoulder">
+              <span class="input-group-addon">см</span>
+            </div>
+          </div>
+
+          <div class="formelement">
+            <label for="growth">Обхват запястья</label>
+            <div class="input-group">
+              <input type="number" min="20" max="250" id="growth" value="185" class="form-control" name="girthWrist">
+              <span class="input-group-addon">см</span>
+            </div>
+          </div>
+
+          <div class="formelement">
+            <label for="growth">Ширина таза</label>
+            <div class="input-group">
+              <input type="number" min="20" max="250" id="growth" value="185" class="form-control" name="widthPlev">
+              <span class="input-group-addon">см</span>
+            </div>
+          </div>
+
+          <div class="formelement">
+            <label for="growth">Длина рук</label>
+            <div class="input-group">
+              <input type="number" min="20" max="250" id="growth" value="185" class="form-control" name="longArm">
+              <span class="input-group-addon">см</span>
+            </div>
+          </div>
+
+          <input type="button" onclick="hideel2()" name="" value="Определить телосложение" data-target="#form1" data-toggle="collapse" data-parent="#colapseblock">
+        </div>
+      </div>
+      </div>
+
+  <script>
+        function hideel1() {
+            $('#form1').collapse('hide');
+          }
+        function hideel2() {
+          $('#form2').collapse('hide');
+          defineSomatotype();
+        }
+        
+      </script>    
+
+</div>
+
+
+
+
+<div id="content" class="row box content">
+  <div class="header">
+      <H2>Цель тренировки<div class="help">?</div></H2>
+    </div>
+        <div class="form">
+          <div class="formelement radiogroup">
+            <label for="aimTrain">Выберите один из предложенных вариантов</label> <br />
+<<<<<<< HEAD
+            <input id="aimTrain" type="radio" name="aimTrain" class="form-control" value = "1" <?= $user->aimTrain=="1"?"checked":"" ?>/> Похудение <br />
+            <input id="aimTrain" type="radio" name="aimTrain" class="form-control" value = "2" <?= $user->aimTrain=="2"?"checked":"" ?>/> Набор мышечной массы <br />
+            <input id="aimTrain" type="radio" name="aimTrain" class="form-control" value = "3" <?= $user->aimTrain=="3"?"checked":"" ?>/> Поддержание мышечной массы <br />
+=======
+            <input id="aimTrain" type="radio" name="aimTrain"  value = "1" <?= $user->aimTrain=="1"?"checked":"" ?>/> Похудение <br />
+            <input id="aimTrain" type="radio" name="aimTrain"  value = "2" <?= $user->aimTrain=="2"?"checked":"" ?>/> Набор мышечной массы <br />
+            <input id="aimTrain" type="radio" name="aimTrain"  value = "3" <?= $user->aimTrain=="3"?"checked":"" ?>/> Поддержание мышечной массы <br />
+>>>>>>> 1a890419bed8548c47a0683b1ec0f844bba92ae9
+          </div>
+        </div>
+</div>
+
+   
+  </div>
+
+  <div class="col-lg-8 ">
+
+    <div class="row box cap">
+        <span>Рекомендации по заполнению</span>
+      </div>
+    
+    <!--Содержимое левого блока-->
+    <div id="content" class="row box content helpblock" data-spy="affix" data-offset-top="40">
+      <div class="header active">
+      <H2>Название блока к которому идут подсказки</H2>
+    </div>
+      <div class="form">
+      Какие-то данные
+    </div>
+      <div class="alert alert-danger" role="alert" style="opacity: 0">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Ошибка!</strong>
+        <div id="message"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="row btnblock">
+  <div class="col-lg-4">
+      <input type="submit" onclick="validate()" value ="Сохранить">
+    </div>
+    </div>
+    
+  </form>  
+
+
+<!--Скрипты-->
+<script src="/js/moment-with-locales.min.js"></script>
+<script src="/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/js/cropper.min.js"></script>
+<script type="text/javascript" src="/js/somatotype.js"></script>
+
+<script type="text/javascript" defer>
+    /*if (true) {
+      readURL($('input[type="file"]')[0]);
+    }*/
+    <? if ($mode == "create") echo "var isCreate = true;"; else echo "var isCreate = false;"; ?>
+
+    function openFileOption()
+    {
+      document.getElementById("file_upload").click();
+    }
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            console.log(input.files[0]);
+            $("#file_info")[0].value = input.files[0].name;
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result)
+            };
+            reader.readAsDataURL(input.files[0]);
+            setTimeout(initCropper, 1000);
+        }
+    }
+    var cropper;
+    function initCropper(){
+        console.log("Came here")
+        var image = document.getElementById('blah');
+        cropper = new Cropper(image, {
+          aspectRatio: 1 / 1,
+          crop: function(e) {
+            console.log(e.detail.x);
+            console.log(e.detail.y);
+          }
+        });
+      }
+        // On crop button clicked
+        /*document.getElementById('crop_button').addEventListener('click', function(){
+            var imgurl =  cropper.getCroppedCanvas().toDataURL();
+            var img = document.createElement("img");
+            img.src = imgurl;
+            document.getElementById("cropped_result").appendChild(img);
+*/
+            /* ---------------- SEND IMAGE TO THE SERVER-------------------------
+*/
+        function validate() {
+          /*if ($('select')[0].value == 0) {
+            $('select')[0].setCustomValidity('Не выбрано значение');
+            $('select')[0].validationMessage = "Не выбрано значение";
+          } else {
+            $('select')[0].setCustomValidity('');
+          }*/
+          //Проверка радио
+          
+          $("div.radiogroup").each(function() {
+            if ($(this).find("input:radio:checked").length==0) {
+              $(this).find("input:radio")[0].setCustomValidity('Не выбрано значение');
+            } else {
+              $(this).find("input:radio")[0].setCustomValidity('');
+            }
+          });
+
+          //Проверка даты
+          var time1 = new Date()
+          var correct = true;
+          var valid = true
+          if ($('#date1')[0].value.match(/\d\d.\d\d.\d\d\d\d/)==null) {
+            valid = false;  correct = false;
+          }
+          if (!valid) {
+            $('#date1')[0].setCustomValidity('Введено неверное значение даты');
+            $('#date1')[0].validationMessage = "Введено неверное значение даты. Формат времени dd.MM.yyyy";
+          }
+          else
+            $('#date1')[0].setCustomValidity('');
+
+        }
+
+        function saveprofile() {
+          if (!$("form")[0].checkValidity()) {
+            return false;
+          } else {
+          if (isCreate && cropper!=undefined) 
+            saveprofilewithimage();
+          else
+            saveprofilewithoutimage();
+          }
+          return false;
+        }
+
+        function saveprofilewithoutimage() {
+          var formData = new FormData();
+          jQuery.each(jQuery('input[type="text"], input[type="hidden"], input[type="number"]'), function(i, input) {
+                          formData.append($(input).attr("name"), $(input)[0].value);
+                      });
+                      jQuery.each(jQuery('input:checked'), function(i, input) {
+                          formData.append($(input).attr("name"), $(input)[0].value);
+                      });
+            $.ajax('', {
+                        method: "POST",
+                        <?= isset($assign)?"url: '/redesign/user/saveprofile', ":"" ?>
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                          //alert(data);
+                          obj = $.parseJSON(data);
+                          if (obj.status == "success")
+                            $(location).attr("href", "<?= isset($assign)?("/redesign/user/userinfo/".$user1->id):"/redesign/profile" ?>");
+                            
+                          else {
+                            alert(data);
+                          }
+                          console.log('Upload success');
+                        },
+                        error: function (data) {
+                          //alert(data);
+                          obj = $.parseJSON(data);
+                          if (obj.status == "success")
+                            $(location).attr("href", "<?= isset($assign)?("/redesign/user/userinfo/".$user1->id):"/redesign/profile" ?>");
+                            
+                          else {
+                            alert(data);
+                          }
+                          console.log('Upload error');
+                        }
+                      });
+        }
+
+        function saveprofilewithimage() {
+          cropper.getCroppedCanvas().toBlob(function (blob) {
+                      var formData = new FormData();
+                      formData.append('avatar', blob);
+                      jQuery.each(jQuery('input[type="text"], input[type="number"'), function(i, input) {
+                          formData.append($(input).attr("name"), $(input)[0].value);
+                      });
+                      jQuery.each(jQuery('input:checked'), function(i, input) {
+                          formData.append($(input).attr("name"), $(input)[0].value);
+                      });
+                      // Use `jQuery.ajax` method
+                      $.ajax('', {
+                        method: "POST",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                          //alert(data);
+                          obj = $.parseJSON(data);
+                          if (obj.status == "success")
+                            $(location).attr("href", "/redesign/profile");
+                            
+                          else {
+                            try {
+                              obj = $.parseJSON(data);
+                              if (obj.status == "success")
+                                $(location).attr("href", "/redesign/profile");
+                                
+                              else {
+                                //alert(data);
+                                $("#message").html(obj.message);
+                                $(".alert").fadeTo(500, 1);
+                                window.setTimeout(function() {$(".alert").fadeTo(500, 0).slideUp(500, function() {/*$(this).remove()*/});}, 4000);
+                              }
+                          } catch (e) {
+                            $("#message").html("Введены неверные данные ");
+                                $(".alert").fadeTo(500, 1);
+                                window.setTimeout(function() {$(".alert").fadeTo(500, 0).slideUp(500, function() {/*$(this).remove()*/});}, 4000);
+                          }
+                            //alert(data);
+                          }
+                          console.log('Upload success');
+                        },
+                        error: function (data) {
+                          //alert(data);
+                          obj = $.parseJSON(data);
+                          if (obj.status == "success")
+                            $(location).attr("href", "/redesign/profile");
+                            
+                          else {
+                            alert(data);
+                          }
+                          console.log('Upload error');
+                        }
+                      });
+                });
+            }
+            /*----------------------------------------------------*/
+        
+    //}
+</script>
+
+<script type="text/javascript">
+  $(function () {
+    $("#datetimepicker1").datetimepicker(
+      {pickTime: false, language: "ru"}
+    );
+  });
+</script>

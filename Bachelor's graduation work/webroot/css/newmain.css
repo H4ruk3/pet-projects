@@ -1,0 +1,285 @@
+body {
+         padding: 0;
+         margin: 0;
+         background: #fafafa;
+         color: #333;
+      }
+
+      html.using-editor, html.using-editor body {
+         height: 100%;
+         overflow: hidden;
+      }
+
+      header {
+         background: #003f72;
+         display: flex;
+         box-shadow: 0 2px 5px -2px #333;
+      }
+
+      #logo {
+         padding: 0.25em 1.5em;
+         font: bolder 16pt/16pt "Fira Sans", sans-serif;
+         color: white;
+         display: flex;
+      }
+
+      #logo img {
+         margin-right: 0.5em;
+         width: 40px;
+         height: 45px;
+         align-self: center;
+      }
+
+      #logo-text {
+         align-self: center;
+      }
+
+      #main-menu {
+         display: flex;
+         align-items: center;
+         margin-left: 2em;
+         width: 100%;
+      }
+
+      #main-menu a {
+         font: 11pt "Fira Sans", sans-serif;
+         color: white;
+         text-decoration: none;
+         padding: 0.5em 1em;
+         transition: background 150ms;
+      }
+
+      #main-menu a:hover {
+         background: #005499;
+      }
+
+      #main-menu a.logout {
+         margin-left: auto;
+      }
+
+      #main-menu a img {
+         width: 25px;
+         height: 25px;
+         display: inline-block;
+         vertical-align: middle;
+         margin-right: 5px;
+      }
+
+      #content {
+         padding: 1em 2em;
+      }
+
+      html.using-editor #content {
+         height: calc(100% - 70px);
+      }
+
+      #content h1 {
+         font: 900 24pt/1.5 "Fira Sans", sans-serif;
+         color: #003f72;
+         margin: 0;
+         padding-top: 0.5em;
+      }
+
+      #content .header-hint {
+         font: 300 11pt/1 "Fira Sans", sans-serif;
+         color: #666;
+         margin: 0;
+      }
+
+      #content form,
+      #content article {
+         padding: 1em;
+         margin: 1.5em 0;
+         background: #fff;
+         border-top: 5px solid #ddd;
+         box-shadow: 0 0 5px -2px #000;
+      }
+
+      #content form fieldset {
+         padding: 0;
+         border: none;
+      }
+
+      #content h3 {
+         font-size: 16pt;
+         margin: 0;
+      }
+
+      #content form fieldset legend,
+      #content h3 {
+         font-weight: bold;
+         padding: 0.25em 0 0.5em 0;
+         color: #003f72;
+      }
+
+      #content .form-input {
+         padding: 1em 0;
+      }
+
+      #content .form-input label {
+         display: block;
+         font-size: 10pt;
+         color: #999;
+      }
+
+      #content .form-input input {
+         padding: 0.75em 1em;
+         margin: 0.5em 0;
+         border: 1px solid #eee;
+         border-radius: 3px;
+         background: #fcfcfc;
+         box-sizing: border-box;
+         width: 100%;
+      }
+
+      .editor {
+         display: flex;
+         height: calc(100% - 6em);
+         margin-top: 1em;
+      }
+
+      .editor .editor-column {
+         flex: 0 1 100%;
+         padding: 0 2em 5em 0;;
+         overflow-y: auto;
+      }
+
+      .editor .editor-column:last-of-type {
+         padding: 0em 2em 3em 2em;
+         margin-left: -28px;
+      }
+
+      .editor .excercise-list {
+         position: relative;
+         user-select: none;
+      }
+
+      .editor .excercise-category {
+         color: #003f72;
+         font-weight: bold;
+         padding-right: 2.5em;
+         user-select: none;
+         cursor: default;
+      }
+
+      .editor .excercise-category-actions {
+         position: absolute;
+         top: 20px;
+         right: 2em;
+      }
+
+      .editor .excercise-category-actions img {
+         width: 20px;
+         height: 20px;
+         cursor: pointer;
+      }
+
+      .editor .excercise-category-actions img:hover {
+         filter: brightness(95%);
+      }
+
+      .editor .excercise {
+         user-select: none;
+         cursor: pointer;
+         transition: 350ms;
+         position: relative;
+      }
+
+      .editor .training-day {
+         user-select: none;
+      }
+
+      .editor .training-day .excercise {
+         box-shadow: 0 0 20px -8px #333;
+         padding: 1.5em 1em;
+         margin: 1em 0;
+      }
+
+      .editor .excercises .excercise {
+         box-shadow: 1px 0 0 0 #eee, 0 1px 0 0 #eee, 1px 1px 0 0 #eee, 1px 0 0 0 #eee inset, 0 1px 0 0 #eee inset;
+         padding: 0.5em;
+         margin: 0;
+         cursor: all-scroll;
+      }
+
+      .editor .excercise-category + .excercise {
+         margin-top: 1em;
+      }
+
+      .editor .excercise:hover {
+         background: #fafafa;
+      }
+
+      .editor .excercise .excercise-name {
+         display: inline-block;
+         font-size: 11pt;
+         font-weight: bold;
+         padding-right: 2.5em;
+         user-select: none;
+      }
+
+      .editor .excercise .excercise-program {
+         color: #999;
+         font-size: 9pt;
+         margin-top: 0.25em;
+      }
+
+      .editor .excercise .excercise-program img {
+         width: 15px;
+         height: 15px;
+      }
+
+      .editor .excercise .excercise-actions {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         margin: auto 0;
+         height: 18px;  /* половина высоты карточки в правой панели */
+         right: 1em;
+      }
+
+      .editor .excercise .excercise-actions img {
+         width: 20px;
+         height: 20px;
+      }
+
+      .droparea {
+         border: 3px dashed #005499;
+         border-radius: 10px;
+         padding: 2em 3em;
+         color: #005499;
+         text-align: center;
+         user-select: none;
+         cursor: default;
+      }
+
+      .droparea:hover {
+         background: #fafafa;
+      }
+
+
+
+
+
+
+
+/*my styles*/
+.grocery-list-name {
+    width: 271px;
+}
+
+#grocery-list-header {
+    width: 100%;
+    overflow-y: scroll;
+    display: table;
+}
+
+.fixblock {
+  overflow-y: scroll;
+    width: 50%;
+    height: 70vh;
+}
+.fixblock.left {
+  width: 100%;
+  margin-bottom: 10px;
+}

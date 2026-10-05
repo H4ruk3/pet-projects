@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ваш личный тренер | Регистрация</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login1.css">
+  <link rel="stylesheet" href="bootmetro-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+  <style type="text/css">
+    .cap span{
+    line-height: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-left: 10%;
+    font-size: 16PX;
+      color: rgb(97, 97, 97);
+    }
+
+
+  h2 {
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+  line-height: 20px;
+}
+  .help {
+    float: right;
+    background-color: #cfcfcf;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+  }
+  .help:hover {
+    cursor:pointer;
+    border: 1px solid black; 
+    line-height: 18px;
+  }
+  hr {
+        color: #cfcfcf;
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+    margin: 5px 0px;
+  }
+  .content {
+    padding: 20px 10%;
+  }
+  .container {
+    overflow: auto;
+    height: auto;
+  }
+  footer {
+        height: 50px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    background-color: #f8f8f8;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+  }
+  main {
+    padding: 60px 0px;
+  }
+  .w {
+    min-height: 100%;
+    position: relative;
+  }
+  .box {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0px 3px 0.96px 1.04px rgba(56, 56, 56, 0.1);
+}
+.btnblock {
+  margin-top:10px;
+}
+.navbar {
+  position: fixed;
+  width:100%;
+  z-index:100;
+} 
+.affix {
+      top: 50px;
+    width: 55%;
+        bottom: 61px;
+    height: auto;
+}
+.content {
+    padding: 20px 40px;
+}
+.cap span {
+      padding-left: 40px;
+}
+.helpblock {
+  position: fixed;
+    width: 55.66%;
+}
+  </style>
+
+
+  <style>
+
+  .tabs {
+        margin-top: 10px;
+  }
+  .tabs div {
+    padding: 10px 0px;
+  }
+  .tabs div:nth-child(2) {
+        border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+  .data {
+    height:200px;
+  }
+  .colortabs {
+        margin: 20px 0;
+    display: table;
+  }
+  .colortabs div {
+    display: table-cell;
+    background-color: #f8ae3b;;
+    float: none;
+    vertical-align: middle;
+    color:#fff;
+  }
+  .colortabs div.active {
+    background-color: #c78c30;
+  } 
+  .colortabs div:nth-child(2) {
+        border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  #avatar {
+    height:200px;
+    width: 200px;
+  }
+</style>
+</head>
+<body>
+  <div class="w">
+	<nav class="navbar navbar-default">
+  <!-- Контейнер (определяет ширину Navbar) -->
+  <div class="container-fluid">
+    <!-- Заголовок -->
+    <div class="navbar-header">
+      <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Бренд или название сайта (отображается в левой части меню) -->
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <!-- Содержимое основной части -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Тренировочная программа</a></li>
+        <li><a href="#">Распоядок дня</a></li>
+        <li><a href="#">Дневник питания</a></li>
+        <li><a href="#">Дневник тренировок</a></li>
+        <li><a href="#">Калькуляторы</a></li>
+        <li><a href="#">Справочники</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav right">
+      	<li><a href="#">Профиль</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+	<div class="container">
+    <div class="row">
+    <div class="col-lg-4 left">
+    
+    <!--Содержимое левого блока-->
+    <div id="content" class="row box content">
+      <img src="" id="avatar" />
+      <H2>udjal89@mail.ru</H2>
+        <hr>
+          <p> Фамилия </p>
+          <p> Имя </p>
+          <p> Пол </p>
+          <p> Возраст </p>
+          <p> Рост </p>
+          <p> Вес </p>
+          <p> Телосложение </p>
+          <p> Цель тренировки </p>
+          <a href="#">Изменить</a>
+      </div>
+
+
+      <div id="content" class="row box content">
+      
+        <a href="#">Выход</a>
+      </div>     
+  </div>
+
+  <div class="col-lg-8 ">
+
+    <div class="row box tabs">
+      <div class="col-lg-4 center">
+        <p>1</p>
+        <p> Распорядок дня </p>
+      </div>    
+      <div class="col-lg-4 center">
+        <p>1</p>
+        <p> Программа тренировок </p>
+      </div>
+      <div class="col-lg-4 center">
+        <p>1</p>
+        <p> Программа питания </p>
+      </div>
+    </div>
+    
+    <!--Содержимое левого блока-->
+    <div class="row colortabs">
+        <div class="col-lg-4 center active">
+        <p> Текущий распорядок дня </p>
+      </div>    
+      <div class="col-lg-4 center">
+        <p> Текущая программа тренировок </p>
+      </div>
+      <div class="col-lg-4 center">
+        <p> Текущая программа питания </p>
+      </div>
+      </div>
+    <div id="content" class="row box content ">
+      
+      <div class="data">
+        Данные
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>  
+  </main>
+<footer>footer</footer>
+</div>
+	<script src="js/jquery-1.10.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="js/croppic.min.js"></script>
+  <script type="text/javascript">
+    //$('#content').perfectScrollbar();
+    //$('#rightbox').perfectScrollbar();
+//$('#leftblock').perfectScrollbar();
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+msgid "Name"
+msgstr "Название"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "View"
+msgstr "Просмотр"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "next"
+msgstr "Следующие"
+
+msgid "previous"
+msgstr "Предыдущие"
+
+msgid "Users"
+msgstr "Пользователи"
+
+msgid "Directory"
+msgstr "Справочники"
+
+msgid "Main"
+msgstr "Главная"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Wakeup Time"
+msgstr "Время подъема"
+
+msgid "Train Time"
+msgstr "Время тренировки"
+
+msgid "Sleep Time"
+msgstr "Время сна"
+
+msgid "Eat Count"
+msgstr "Количество приемов пищи"
+
+msgid "Active"
+msgstr "Активный"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Profile"
+msgstr "Профиль"
+
+msgid "Routine"
+msgstr "Распорядок дня"
+
+msgid "Trainingprogram"
+msgstr "Тренировочные программы"
+
+msgid "Diary"
+msgstr "Дневник"
+
+msgid "User"
+msgstr "Участники"
+
+msgid "Auth"
+msgstr "Вход"
+
+msgid "Cntdays"
+msgstr "Количество тренировочных дней"
+
+msgid "Podhod"
+msgstr "Количество подходов"
+
+msgid "Repeat"
+msgstr "Количество повторений"
+
+msgid "Weight"
+msgstr "Вес"

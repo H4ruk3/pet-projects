@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - coach_me@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="coach_me">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="phpmyadmin"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="yougid"/>
+    <table id="8" parent="1" name="eats"/>
+    <table id="9" parent="1" name="profiles"/>
+    <table id="10" parent="1" name="routine"/>
+    <table id="11" parent="1" name="users"/>
+    <column id="12" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="13" parent="8" name="time">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="14" parent="8" name="routineId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="15" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="16" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="17" parent="9" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="9" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(256)|0</data-type>
+    </column>
+    <column id="19" parent="9" name="sex">
+      <data-type>enum(&apos;male&apos;, &apos;female&apos;, &apos;&apos;, &apos;&apos;)|0</data-type>
+    </column>
+    <column id="20" parent="9" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="21" parent="9" name="growth">
+      <data-type>float|0</data-type>
+    </column>
+    <column id="22" parent="9" name="weight">
+      <data-type>float|0</data-type>
+    </column>
+    <column id="23" parent="9" name="aimTrain">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="24" parent="9" name="active">
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="25" parent="9" name="somatotype">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="26" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="27" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="28" parent="10" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(128)|0</data-type>
+    </column>
+    <column id="29" parent="10" name="wakeupTime">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="30" parent="10" name="trainTime">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="31" parent="10" name="eatCount">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="10" name="sleepTime">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="33" parent="10" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="34" parent="10" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="35" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="36" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="37" parent="11" name="username">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="38" parent="11" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="39" parent="11" name="role">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="40" parent="11" name="created">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="41" parent="11" name="modified">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="42" parent="11" name="apiKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="43" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

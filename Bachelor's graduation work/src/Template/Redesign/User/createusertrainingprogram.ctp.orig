@@ -1,0 +1,18 @@
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1a890419bed8548c47a0683b1ec0f844bba92ae9
+<?php  $this->extend('/Redesign/Trainingprogram/create'); $this->end();  ?>
+
+<?
+    $this->Html->addCrumb('Пользователи', ['prefix' => 'redesign', 'controller' => 'user', 'action' => 'index']);
+	$this->Html->addCrumb($user->username, '/redesign/user/userinfo/'.$user->id);
+	$this->Html->addCrumb("Тренировочные программы", '/redesign/user/usertrainingprogram/'.$user->id);
+	$this->Html->addCrumb("Создание тренировочной программы", '#');
+echo $this->Html->getCrumbList(array(
+  'lastClass' => 'current',
+  'id' => 'breadcrumb',
+  'escape' => false
+)); ?>
+

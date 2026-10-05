@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+body
+{
+    font-family: 'Lato', 'sans-serif';
+    }
+.profile 
+{
+    min-height: 355px;
+    display: inline-block;
+    }
+figcaption.ratings
+{
+    margin-top:20px;
+    }
+figcaption.ratings a
+{
+    color:#f1c40f;
+    font-size:11px;
+    }
+figcaption.ratings a:hover
+{
+    color:#f39c12;
+    text-decoration:none;
+    }
+.divider 
+{
+    border-top:1px solid rgba(0,0,0,0.1);
+    }
+.emphasis 
+{
+    border-top: 4px solid transparent;
+    padding-bottom: 20px;
+    }
+.emphasis:hover 
+{
+    border-top: 4px solid #337ab7;
+    }
+.emphasis h2
+{
+    margin-bottom:0;
+    }
+span.tags 
+{
+    background: #337ab7;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+    }
+.dropdown-menu 
+{
+    background-color: #34495e;    
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+    }
+.dropdown-menu .divider 
+{
+    background:none;    
+    }
+.dropdown-menu>li>a
+{
+    color:#f5f5f5;
+    }
+.dropup .dropdown-menu 
+{
+    margin-bottom:10px;
+    }
+.dropup .dropdown-menu:before 
+{
+    content: "";
+    border-top: 10px solid #34495e;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+}
+.emphasis.active {
+    background-color: rgba(51, 122, 183, 0.13);
+    border-top: 4px solid #337ab7;
+}
+
+
+/*Стили страницы профиля пользователя*/
+.tabs {
+        margin-top: 10px;
+  }
+  .tabs div {
+    padding: 10px 0px;
+  }
+  .tabs div:nth-child(2) {
+        border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+  .data {
+    height:200px;
+  }
+  .colortabs {
+        margin: 20px 0;
+    display: table;
+  }
+  .colortabs div {
+    display: table-cell;
+    background-color: #f8ae3b;;
+    float: none;
+    vertical-align: middle;
+    color:#fff;
+  }
+  .colortabs div.active {
+    background-color: #c78c30;
+  } 
+  .colortabs div:nth-child(2) {
+        border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  #avatar {
+    height:200px;
+    width: 200px;
+  }
+
+  .noprofile {
+        background: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  .noprofile img{
+        max-height: 150px;
+  }
+  .noprofile p {
+    font-size: 14px;
+    margin-top: 15px;
+  }

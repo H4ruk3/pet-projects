@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ваш личный тренер | Регистрация</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login1.css">
+  <link rel="stylesheet" href="bootmetro-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+  <style type="text/css">
+    .cap span{
+    line-height: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-left: 10%;
+    font-size: 16PX;
+      color: rgb(97, 97, 97);
+    }
+
+
+  h2 {
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+  line-height: 20px;
+}
+  .help {
+    float: right;
+    background-color: #cfcfcf;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+  }
+  .help:hover {
+    cursor:pointer;
+    border: 1px solid black; 
+    line-height: 18px;
+  }
+  hr {
+        color: #cfcfcf;
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+    margin: 5px 0px;
+  }
+  .content {
+    padding: 20px 10%;
+  }
+  .container {
+    overflow: auto;
+    height: auto;
+  }
+  footer {
+        height: 90px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    background-color: #f8f8f8;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+  }
+  main {
+        padding: 60px 0px 100px 10px;
+  }
+  .w {
+    min-height: 100%;
+    position: relative;
+  }
+  .box {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0px 3px 0.96px 1.04px rgba(56, 56, 56, 0.1);
+}
+.btnblock {
+  margin-top:10px;
+}
+.navbar {
+  position: fixed;
+  width:100%;
+  z-index:100;
+} 
+.affix {
+      top: 50px;
+    width: 55%;
+        bottom: 61px;
+    height: auto;
+}
+.content {
+    padding: 20px 40px;
+}
+.cap span {
+      padding-left: 40px;
+}
+.helpblock {
+  position: fixed;
+    width: 55.66%;
+}
+
+
+
+
+
+
+
+.copyright {
+  float: left;
+    line-height: 90px;
+}
+.contacts {
+  float: right;
+  height:70px;
+  margin-top:10px;
+}
+.contacts .title {
+  font-size: 18px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="w">
+	<nav class="navbar navbar-default">
+  <!-- Контейнер (определяет ширину Navbar) -->
+  <div class="container-fluid">
+    <!-- Заголовок -->
+    <div class="navbar-header">
+      <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Бренд или название сайта (отображается в левой части меню) -->
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <!-- Содержимое основной части -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Тренировочная программа</a></li>
+        <li><a href="#">Распоядок дня</a></li>
+        <li><a href="#">Дневник питания</a></li>
+        <li><a href="#">Дневник тренировок</a></li>
+        <li><a href="#">Калькуляторы</a></li>
+        <li><a href="#">Справочники</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav right">
+      	<li><a href="#">Профиль</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+	<div class="container">
+    <div class="row">
+    <div class="col-lg-4 left">
+      <!--Название левого блока-->
+    
+      <div class="row box cap">
+        <span>Создание программы тренировок</span>
+      </div>
+    
+    <!--Содержимое левого блока-->
+    <form>
+    <div id="content" class="row box content">
+      <H2>Личные данные<div class="help">?</div></H2>
+        <hr>
+          <div class="formelement">
+            <label for="name">Фамилия</label>
+            <input id="name" type="text" name="name" class="form-controll"/>
+          </div>
+          <div class="formelement">
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name" class="form-controll"/>
+          </div>
+          <div class="formelement">
+            <label for="name">Пол</label>
+            <div class="row">
+              <div class="col-lg-6">
+                <input id="name" type="radio" name="name" class="form-controll"/> Мужской
+              </div>
+              <div class="col-lg-6">
+                <input id="name" type="radio" name="name" class="form-controll"/> Женский
+              </div>
+            </div>
+          </div>
+          <div class="formelement">
+            <label for="name">Дата рождения</label>
+            <input id="name" type="text" name="name" class="form-controll"/>
+          </div>
+          <div class="formelement">
+            <label for="name">Рост</label>
+            <input id="name" type="text" name="name" class="form-controll"/>
+          </div>
+          <div class="formelement">
+            <label for="name">Вес</label>
+            <input id="name" type="text" name="name" class="form-controll"/>
+          </div>
+      </div>
+
+
+<div id="content" class="row box content">
+      <H2>Телосложение<div class="help">?</div></H2>
+        <hr>
+          <div class="formelement">
+            <label for="name">Выберите один из предложенных вариантов</label>
+            <input id="name" type="radio" name="name" class="form-controll"/> Эндоморф <br />
+            <input id="name" type="radio" name="name" class="form-controll"/> Эктоморф <br />
+            <input id="name" type="radio" name="name" class="form-controll"/> Мезоморф <br />
+          </div>
+          <a href="#">Определить телосложение при помощи калькулятора</a>
+</div>
+
+<div id="content" class="row box content">
+      <H2>Цель тренировки<div class="help">?</div></H2>
+        <hr>
+          <div class="formelement">
+            <label for="name">Выберите один из предложенных вариантов</label>
+            <input id="name" type="radio" name="name" class="form-controll"/> Похудение <br />
+            <input id="name" type="radio" name="name" class="form-controll"/> Набор мышечной массы <br />
+            <input id="name" type="radio" name="name" class="form-controll"/> Поддержание мышечной массы <br />
+          </div>
+</div>
+
+   
+  </div>
+
+  <div class="col-lg-8 ">
+
+    <div class="row box cap">
+        <span>Создание программы тренировок</span>
+      </div>
+    
+    <!--Содержимое левого блока-->
+    <div id="content" class="row box content helpblock" data-spy="affix" data-offset-top="40">
+      Какие-то данные
+    </div>
+
+  </div>
+</div>
+
+
+<div class="row btnblock">
+  <div class="col-lg-4">
+      <input type="button" value ="Сохранить">
+    </div>
+    </div>
+
+    </div>
+    
+  </form>  
+  </main>
+<footer>
+  <div class="container">
+    <div class="copyright">ИТ КОНЦЕПТ &copy; 2017</div>
+    <div class="contacts">
+      <span class="title">Наши контакты:</span><br>
+      <span class="glyphicon glyphicon-earphone"></span><a href="tel:+7(4862)42-36-12"> +7 (4862) 42-36-12</a><br>
+        <span class="glyphicon glyphicon-envelope"></span><a href="mailto:support@coach-me.ru"> support@coach-me.ru </a>
+      </div>
+  </div>
+</footer>
+</div>
+	<script src="js/jquery-1.10.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="js/croppic.min.js"></script>
+  <script type="text/javascript">
+    $('#content').perfectScrollbar();
+    $('#rightbox').perfectScrollbar();
+//$('#leftblock').perfectScrollbar();
+  </script>
+</body>
+</html>
